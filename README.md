@@ -8,7 +8,8 @@ el código fuente, en concreto las matrices "automata1" y "automata2".
 La otra zona editable de código es aquella debajo del comentario "OUTPUT". La parte editable es:
  
  -La estructura if...else if...else if...else.
-  -La parte entrecomillada del cuerpo del bucle más interno de iterador "j".
+ 
+ -La parte entrecomillada del cuerpo del bucle más interno de iterador "j".
   
 Al ser un DFA, normalmente solemos encontrar un nodo sumidero donde se dirigen todos los inputs que no son aceptados
 en el lenguaje, ese valor está representado por la variable "Error" y es también editable.
