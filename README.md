@@ -13,3 +13,6 @@ La otra zona editable de código es aquella debajo del comentario "OUTPUT". La p
   
 Al ser un DFA, normalmente solemos encontrar un nodo sumidero donde se dirigen todos los inputs que no son aceptados
 en el lenguaje, ese valor está representado por la variable "Error" y es también editable.
+
+#CUIDADO
+En la versión actual con autómatas pequeños da errores.
