@@ -6,7 +6,7 @@ El programa por defecto ejecuta mi caso particular, si se quiere realizar otro p
 el código fuente, en concreto las matrices "automata1" y "automata2".
 
 La otra zona editable de código es aquella debajo del comentario "OUTPUT". La parte editable es:
-  -La estructura if...else if...else if...else.\n
+  -La estructura if...else if...else if...else.
   -La parte entrecomillada del cuerpo del bucle más interno de iterador "j".
   
 Al ser un DFA, normalmente solemos encontrar un nodo sumidero donde se dirigen todos los inputs que no son aceptados
