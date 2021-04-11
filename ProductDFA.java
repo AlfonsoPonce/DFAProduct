@@ -1,6 +1,5 @@
 
 
-package fcktask5;
 
 public class ProductDFA {
 
