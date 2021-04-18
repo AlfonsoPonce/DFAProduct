@@ -74,50 +74,6 @@ public class ProductDFA {
             }
         }
         
-            
-        
-        
-        System.out.println();
-        System.out.println("**********AHORA HAY QUE REMOVER LOS ESTADOS INALCANZABLES**********");
-        System.out.println();
-        
-        for(int k = 0; k < nEstados1*nEstados2; k++)
-            for(int i = 0; i < nEstados1*nEstados2; i++)
-                for(int j = 0; j < nFuncionesTransicion; j++)
-                    if(producto[i][j].equals(indices[k]))
-                        apariciones[k] = apariciones[k] || true;
-        
-        
-        for(int i = 0; i < nEstados1*nEstados2; i++)
-        {
-            if(!apariciones[i])
-                filasEliminadas++;
-            for(int j = 0; j < nFuncionesTransicion; j++)
-                if(!apariciones[i])
-                    producto[i][j] = "X";
-        }        
-                    
-        
-        
-        for(int k = 0; k < nEstados2; k++)
-        {
-            for(int i = 0; i < nEstados1; i++)
-            {
-                if(i == 10 && k == 6) System.out.print("["+Error+","+Error+"]");
-                else if(i == 10) System.out.print("["+Error+","+k+"]");
-                else if(k == 6) System.out.print("["+i+","+Error+"]");
-                else System.out.print("["+i+","+k+"]");
-
-                for(int j = 0; j < nFuncionesTransicion; j++)
-                    System.out.print("{"+producto[k*10 + i + k][j]+"} ");
-                
-
-                System.out.println();
-            }
-        }    
-        System.out.println("FILAS TOTALES: "+(nEstados1*nEstados2));
-        System.out.println("FILAS ELIMINADAS: "+filasEliminadas);
-        System.out.println("FILAS RESTANTES: "+(nEstados1*nEstados2-filasEliminadas));
         
         
     }
